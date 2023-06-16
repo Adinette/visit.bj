@@ -6,6 +6,6 @@ import { request } from "./request.service";
  * @param {object} data - The data containing the car information.
  * @return {Promise} A Promise that resolves to the response data from the server.
  */
-export function login(data) {
-  return request("auth/login-user", "POST", data);
+export function update_password(data) {
+  return request("auth/reset-password", "POST", data);
 }

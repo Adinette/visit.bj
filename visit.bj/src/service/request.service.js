@@ -1,4 +1,5 @@
-const baseUrl = " arenecelsia.hecamacb.com/celsia/visitbj/public/api/";
+const baseUrl = "http://arenecelsia.hecamacb.com/celsia/visitbj/public/api/";
+
 
 export async function request(url, method, data) {
   const requestOptions = {
@@ -9,9 +10,9 @@ export async function request(url, method, data) {
     body: JSON.stringify(data),
   };
 
-  const token = localStorage.getItem("token");
-  if (token) {
-    requestOptions.headers.Authorization = token;
+  const reference = localStorage.getItem("reference");
+  if (reference) {
+    requestOptions.headers.Authorization = reference;
   }
 
   const response = await fetch(`${baseUrl}${url}`, requestOptions);
@@ -22,14 +23,3 @@ export async function request(url, method, data) {
 
   return response.json();
 }
-// arenecelsia.hecamacb.com/celsia/visitbj/public/api/auth/register-user
-// Exemple de parametre pour le register{
-//     "last_name" :"celsia",
-//     "first_name" :"MOUFTAOU",
-//      "password" :"12334556",
-//      "email":"mouftaouhanbbn@gmail.com",
-//      "phone":"+22997986041"
-
-// }
-// arenecelsia.hecamacb.com/celsia/visitbj/public/api/auth/login-user (pour le login)
-// Exemple de paramètre pour le login:{"email":"mouftaouhanbbn@gmail.com","password" :"12334556"}

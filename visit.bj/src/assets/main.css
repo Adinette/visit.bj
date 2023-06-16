@@ -1,0 +1,124 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+:root {
+  --color-primary: #ff8800;
+  --color-secondary: #fff8f0;
+}
+img {
+  max-width: 100%;
+}
+a {
+  color: #ff8800;
+}
+.login,
+.register,
+.forgetpasseword,
+.verification,
+.createpassword {
+  background: url("../assets/image/imagebackground.png") no-repeat;
+  background-position: center;
+  background-size: cover;
+  font-family: "Poppins";
+  font-size: 1rem;
+  font-weight: 400;
+  margin: auto;
+  width: 100%;
+  height: auto;
+  padding: 10rem 0;
+  /* padding: 10rem 0; */
+}
+.colorform{
+  background-color: #fff;
+}
+.btn-orange {
+  background-color: #ff8800;
+  border: 1px solid #ff8800;
+  border-radius: 8px;
+  color: #ffffff;
+}
+.btn:hover {
+  background-color: #ff8800;
+  border: 1px solid #ff8800;
+  color: #ffffff;
+}
+.form-control:focus {
+  border-color: #ff8800 !important;
+  box-shadow: 0 0 0 0.2rem rgba(255, 165, 0, 0.25) !important;
+}
+.hr-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hr-left,
+.hr-right {
+  flex-grow: 1;
+  margin: 0;
+}
+.or-text {
+  padding: 0 10px;
+}
+.iconreseausoiaux{
+  position: relative;
+  width: 2.5rem;
+}
+/* input de verification de mots de passe */
+.square-input {
+  border-radius: 2;
+  height: 4.5rem;
+  text-align: center;
+}
+.center-placeholder::placeholder {
+  text-align: center;
+}
+.links{
+    color: #ff8800;
+}
+/* no scroll input number */
+.no-scrollbar::-webkit-inner-spin-button,
+.no-scrollbar::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* floating label */
+.did-floating-label-content {
+  position: relative;
+  margin-bottom: 20px;
+}
+.did-floating-label {
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  left: 15px;
+  top: 17px;
+  padding: 0 5px;
+  background: #fff;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+  color: gray;
+}
+.did-floating-input {
+  display: block;
+  width: 100%;
+  height: 3.5rem;
+  padding: 0 20px;
+  background: #fff;
+  border-radius: 6px;
+  box-sizing: border-box;
+  &:focus {
+    outline: none;
+    ~ .did-floating-label {
+      top: -8px;
+      font-size: 13px;
+    }
+  }
+}
+.did-floating-input:not(:placeholder-shown) ~ .did-floating-label {
+  top: -8px;
+  font-size: 13px;
+}
+.did-floating-input:focus + .did-floating-label {
+  color: #ff8800;
+}

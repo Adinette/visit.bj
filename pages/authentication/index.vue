@@ -1,15 +1,14 @@
-<script setup >
+<script setup>
+  import Content from '~/Components/authentication/index.vue';
  
- definePageMeta({
+  definePageMeta({
   layout: 'custom'
-})
+});
 
 </script>
 
 <template>
-  <div>
-    <h1>S'inscrire</h1>
-  </div>
+  <Content title="S'inscrire"></Content>
 </template>
 
 <style scoped></style>

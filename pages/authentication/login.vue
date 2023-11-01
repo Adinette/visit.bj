@@ -9,7 +9,7 @@
 </script>
 
 <template>
-  <Content>
+  <Content title="Se connecter">
     <LoginForm/>
   </Content>
 </template>

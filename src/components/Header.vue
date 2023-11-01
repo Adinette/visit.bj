@@ -1,6 +1,6 @@
 <script setup></script>
 <template>
-      <div class="container">
+      <div class="container"> 
         <nav class="navbar navbar-expand-lg">
           <a class="navbar-brand" href="index.html"><img src="images/logo.png"
               alt="logo"></a>

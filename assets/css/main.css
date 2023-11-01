@@ -52,6 +52,29 @@ a {
   color: var(--color-white);
 }
 
+.floatingInput {
+  height: 3.5rem;
+}
+.floatingInput:focus {
+  outline: none;
+}
+.floatingInput:focus + .floatingLabel {
+  top: -0.75rem;
+  font-size: 1rem;
+  color: var(--color-primary);
+}
+.floatingLabel {
+  pointer-events: none;
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  background: var(--color-white);
+  padding: 0 0.5rem;
+  color: #8C8B92;
+  transition: all ease-in-out 0.2s;
+}
+
+
 
 header {
   background-color: var(--color-white);

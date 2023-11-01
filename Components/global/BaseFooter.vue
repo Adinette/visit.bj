@@ -33,7 +33,7 @@
     </div>
     <div class="copyright">
       <div class="container">
-        <div>&copy; 2023 <span class="name-web">visit.bj</span> Tous droits réservés.</div>
+        <div>&copy; 2023 <span>visit.bj</span> Tous droits réservés.</div>
       </div>
     </div>
 </template>

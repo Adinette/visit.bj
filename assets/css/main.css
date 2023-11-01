@@ -1,0 +1,128 @@
+:root {
+  --color-primary: #FF8800;
+  --color-secondary: #FFF8F0;
+  --color-white: #fff;
+  --color-text: #1A1817;
+}
+body {
+  background-color: var(--color-white);
+  font-family: "Poppins";
+  font-size: 16px;
+  font-weight: 400;
+  margin: auto;
+  width: 100%;
+  height: auto;
+  color: var(--color-text);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+}
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.btn-primary {
+  background-color: var(--color-primary);
+  font-weight: 600;
+  padding: 0.5rem 1rem ;
+  border: 1px solid var(--color-primary);
+  border-radius: 8px;
+  color: #FFFFFF;
+}
+.btn-secondary {
+  background-color: #FFFFFF;
+  font-weight: 600;
+  padding: 0.5rem 1rem ;
+  border: 1px solid var(--color-primary);
+  border-radius: 8px;
+  color: var(--color-primary);
+}
+.btn:hover, .btn:focus-visible, .btn-check:focus+.btn,
+.btn:focus, .btn:first-child:active, :not(.btn-check)+.btn:active {
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
+  box-shadow: none;
+  color: var(--color-white);
+}
+
+
+header {
+  background-color: var(--color-white);
+  box-shadow: 1px 1px 6px rgb(26 24 23 / 0.03);
+}
+.navbar-expand-lg .navbar-nav .nav-item {
+  margin-right: 1rem;
+}
+.navbar-expand-lg .navbar-nav .nav-item .nav-link {
+  padding: 0;
+  margin: 0;
+}
+.join > :first-child {
+  margin-right: 1rem;
+}
+
+
+.authentication {
+  display: flex;
+  align-items: center;
+  background-image: url(/assets/images/authentication.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  /* height: 100vh; */
+  padding: 2rem 0;
+}
+.authentication .blogAuthentication {
+  background-color: var(--color-white);
+  border: 1px solid #E4E4E4;
+  border-radius: 24px;
+}
+
+footer {
+  text-align: center;
+  color: var(--color-white);
+}
+footer a {
+  margin: 0 1rem;
+  color: var(--color-white);
+}
+footer a:hover {
+  color: #FFFFFF;
+}
+ 
+.socialNetwork {
+  background-color: var(--color-secondary);
+  padding: 2.5rem 0;
+}
+
+.contentIcon {
+  display: flex;
+  justify-content: center;
+}
+.contentIcon a {
+  background-color: var(--color-primary);
+  width: 2rem;
+  height: 2rem;
+  line-height: 2;
+  border-radius: 50px;
+}
+
+.navigationFoot {
+  background-color: var(--color-primary);
+  padding: 2.5rem 0;
+}
+ 
+.copyright {
+  background-color: var(--color-text);
+  padding: 1rem 0;
+}
+.copyright .name-web {
+  text-transform: uppercase;
+}

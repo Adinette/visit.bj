@@ -1,6 +1,6 @@
 
 import { updateAppConfig } from '#app'
-import { defuFn } from 'C:/Users/asus/OneDrive/Documents/gitlab/visitbj-app/node_modules/defu/dist/defu.mjs'
+import { defuFn } from '/Users/tounde99/Sites/deploy/visit.bj/visitbj-app/node_modules/defu/dist/defu.mjs'
 
 const inlineConfig = {
   "nuxt": {

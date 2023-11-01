@@ -6,6 +6,10 @@ const props = defineProps({
   title: {
     type: String,
     required: true
+  },
+  subtitle: {
+    type: String,
+    default: 'Découvrez le Bénin à travers nos offres de voyage.'
   }
 })
 </script>
@@ -18,7 +22,7 @@ const props = defineProps({
             <div class="text-center mb-4"><img src="~/assets/images/logo.png" alt="logo"></div>
             <div>
               <h1>{{ title }}</h1>
-              <p>Découvrez le Bénin à travers nos offres de voyage.</p>
+              <p>{{ subtitle }}</p>
               <slot></slot> 
             </div>
           </div>

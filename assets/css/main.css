@@ -58,8 +58,9 @@ a {
 .floatingInput:focus {
   outline: none;
 }
-.floatingInput:focus + .floatingLabel {
+.floatingInput:focus + .floatingLabel{
   top: -0.75rem;
+  display: block;
   font-size: 1rem;
   color: var(--color-primary);
 }
@@ -68,10 +69,14 @@ a {
   position: absolute;
   top: 1rem;
   left: 1rem;
-  background: var(--color-white);
+  background: #FFFFFF;
   padding: 0 0.5rem;
   color: #8C8B92;
   transition: all ease-in-out 0.2s;
+  display: none;
+}
+input:focus::placeholder {
+  color: transparent;
 }
 
 

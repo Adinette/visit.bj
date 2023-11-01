@@ -10,3 +10,5 @@
     <h1>Découvrir le Bénin</h1>
   </div>
 </template>
+
+<style scoped></style>

@@ -11,10 +11,15 @@ body {
   font-family: "Poppins";
   font-size: 16px;
   font-weight: 400;
+  font-style: normal;
   margin: auto;
   width: 100%;
   height: auto;
   color: var(--color-text);
+}
+
+h1, h2 {
+  font-weight: 700;
 }
 
 ul {
@@ -52,6 +57,11 @@ a {
   border-color: var(--color-primary);
   box-shadow: none;
   color: var(--color-white);
+}
+
+.form-control:focus, .form-select:focus {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 0.2rem rgba(255, 165, 0, 0.25);
 }
 
 .floatingInput {
@@ -155,4 +165,13 @@ footer a:hover {
 }
 .copyright .name-web {
   text-transform: uppercase;
+}
+
+
+@media (max-width: 992px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+ 
 }

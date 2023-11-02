@@ -12,7 +12,7 @@
     title: "Se connecter",
   });
 
-  const userData = ref({
+  const login = ref({
     email: '',
     password: '',
   });
@@ -26,8 +26,8 @@
   <authContent title="Se connecter">
     <form>
       <p v-if="feedback">{{ feedback }}</p>
-      <div class="mb-4"><InputField type="email" label="E-mail" v-model="userData.email" placeholder="E-mail" /></div>
-      <div class="mb-3"><InputField type="password" label="Mot de passe"  v-model="userData.password"  placeholder="Mot de passe" /></div>
+      <div class="mb-4"><InputField type="email" label="E-mail" v-model="login.email" placeholder="E-mail" /></div>
+      <div class="mb-3"><InputField type="password" label="Mot de passe"  v-model="login.password"  placeholder="Mot de passe" /></div>
       <div class="text-end mb-3"><NuxtLink to="/auth/resetPassword">Mot de pase oublié?</NuxtLink></div>
       <div class="mb-4"><button type="submit">Se connecter</button></div>
       

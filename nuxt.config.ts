@@ -7,7 +7,7 @@ export default defineNuxtConfig({
     '~/assets/css/theme.css',
     '~/assets/css/bootstrap-icons.css',
     '~/assets/css/main.css'
-  ]
-  
-})
+  ],
 
+  modules: ["@nuxt/image"]
+})

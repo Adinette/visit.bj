@@ -5,9 +5,7 @@
     <div class="socialNetwork">
       <div class="container">
         <div class="mb-3">
-          <NuxtLink to="#"
-            ><img src="~/assets/images/logo.png" alt="logo"
-          /></NuxtLink>
+          <NuxtLink to="#"><NuxtImg src="~/assets/images/logo.png" alt="logo"/></NuxtLink>
         </div>
         <div class="contentIcon">
           <NuxtLink to="#"><i class="bi bi-facebook"></i></NuxtLink>

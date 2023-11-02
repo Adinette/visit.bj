@@ -1,17 +1,15 @@
 <script setup lang="ts">
-  import { defineProps } from 'vue'
-
-  const { type, title } = defineProps({
+ 
+ const props = defineProps({
     type: String,
-    title: {
-      type: String,
-      required: true
-    },
-  })
+  });
+
+ 
 </script>
 
 <template>
-  <button :type="type">{{ title }}</button>
+  <button :type="props.type"> </button>
+  
 </template>
 
 <style scoped></style>

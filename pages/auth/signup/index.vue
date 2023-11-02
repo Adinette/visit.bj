@@ -1,8 +1,11 @@
-<script setup lang="ts"> 
-
+<script setup> 
   import authContent from '~/Components/authComponent/authContent.vue';
   import InputField from '~/Components/widgets/input/InputField.vue'; 
   import Community from '~/Components/authComponent/Community.vue';
+  
+  useHead({
+    title: "S'inscrire",
+  });
 
   definePageMeta({
     layout: 'custom'

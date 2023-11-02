@@ -1,16 +1,14 @@
 <script setup>
-  import Navbar from '../Components/global/Navbar.vue';
-  import baseFooter from '~/Components/global/BaseFooter.vue';
-</script>
+
+  import AppHeader from '~/Components/global/AppHeader.vue';
+  import AppFooter from '~/Components/global/AppFooter.vue';
+  
+ </script>
 
 <template>
-  <header>
-    <Navbar/>
-  </header>
-  <slot></slot> 
-  <footer>
-    <baseFooter/>
-  </footer>
+  <AppHeader/>
+    <slot></slot> 
+  <AppFooter/>
 </template>
 
 <style scoped></style>

@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts"> 
 
   import authContent from '~/Components/authComponent/authContent.vue';
   import InputField from '~/Components/widgets/input/InputField.vue'; 
@@ -20,13 +20,13 @@
       <div class="mb-4"><InputField type="email" label="E-mail" v-model="email" placeholder="E-mail" /></div>
       <div class="mb-4"><InputField type="password" label="Mot de passe"  v-model="password"  placeholder="Mot de passe" /></div>
       <div class="mb-4"><button type="submit">S'inscrire</button></div>
-      
+
       <Community/>
+
       <div class="text-center"><p class="mb-0">Avez-vous déjà un compte ? <NuxtLink to="/auth/login">Se connecter</NuxtLink></p></div> 
     </form>
   </authContent>
 
 </template>
-
 
 <style scoped></style>

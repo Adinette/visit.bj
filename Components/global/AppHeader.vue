@@ -4,7 +4,7 @@
   <header>
     <div class="container">
       <nav class="navbar navbar-expand-lg">
-        <NuxtLink to="#"><img src="~/assets/images/logo.png" alt="logo"/></NuxtLink>
+        <NuxtLink to="#"><NuxtImg src="~/assets/images/logo.png" alt="logo"/></NuxtLink>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>

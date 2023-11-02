@@ -1,7 +1,8 @@
 <script setup>
+
   import authContent from '~/Components/authComponent/authContent.vue';
   import InputField from '~/Components/widgets/input/InputField.vue'; 
-  import orLogin from '~/Components/authComponent/OrLogin.vue'; 
+  import Community from '~/Components/authComponent/Community.vue';
 
   definePageMeta({
     layout: 'custom'
@@ -10,6 +11,7 @@
 </script>
 
 <template>
+
   <authContent title="S'inscrire">
     <form>
       <p v-if="feedback">{{ feedback }}</p>
@@ -18,10 +20,12 @@
       <div class="mb-4"><InputField type="email" label="E-mail" v-model="email" placeholder="E-mail" /></div>
       <div class="mb-4"><InputField type="password" label="Mot de passe"  v-model="password"  placeholder="Mot de passe" /></div>
       <div class="mb-4"><button type="submit">S'inscrire</button></div>
-      <orLogin/>
+      
+      <Community/>
       <div class="text-center"><p class="mb-0">Avez-vous déjà un compte ? <NuxtLink to="/auth/login">Se connecter</NuxtLink></p></div> 
     </form>
   </authContent>
+
 </template>
 
 

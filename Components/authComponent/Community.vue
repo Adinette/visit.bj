@@ -8,8 +8,8 @@
       <hr class="line">
     </div>
     <div>
-      <NuxtLink class="mr-2" to="#"><img src="~/assets/images/facebook.png" alt="facebok"></NuxtLink>
-      <NuxtLink to="#"><img src="~/assets/images/google.png" alt="google"></NuxtLink>
+      <button class="mr-2"><img src="~/assets/images/facebook.png" alt="facebok"></button>
+      <button><img src="~/assets/images/google.png" alt="google"></button>
     </div>
   </div> 
 </template>

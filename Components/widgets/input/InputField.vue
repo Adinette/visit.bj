@@ -1,18 +1,19 @@
 <script setup>
-import { ref, defineProps } from 'vue';
+import { ref, watch, defineProps } from 'vue';
 
 const props = defineProps({
   label: String,
   type: String,
   value: String,
   placeholder: String,
+  error: String,  
 });
 
 const valueRef = ref(props.value);
 
-watch(() => {
-  valueRef.value = props.value;
-});
+watch(() => props.value, newVal => {
+  valueRef.value = newVal;
+}, { immediate: true });
 
 </script>
 
@@ -24,5 +25,4 @@ watch(() => {
   </div>
 </template>
 
-<style scoped> </style>
-
+<style scoped></style>

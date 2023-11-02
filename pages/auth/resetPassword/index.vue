@@ -14,7 +14,7 @@
       <p v-if="feedback">{{ feedback }}</p>
       <div class="mb-3"><InputField type="email" label="E-mail" v-model="email" placeholder="E-mail" /></div>
       <button type="submit">Envoyer</button>
-      <div class="text-center"><p>Avez-vous déjà un compte ?  <NuxtLink to="/auth/login">Se connecter</NuxtLink></p></div> 
+      <div class="text-center"><p class="mb-0">Avez-vous déjà un compte ?  <NuxtLink to="/auth/login">Se connecter</NuxtLink></p></div> 
     </form>  
   </authContent>
   

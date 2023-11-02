@@ -9,7 +9,7 @@
     },
     subtitle: {
       type: String,
-      default: 'Découvrez le Bénin à travers nos offres de voyage.'
+      default: 'Découvrez le Bénin à travers nos offres de voyage.', 
     }
   })
 </script>
@@ -23,7 +23,7 @@
             <div>
               <div class="mb-6">
                 <h1 class="mb-3">{{ title }}</h1>
-                <p class="mb-0">{{ subtitle }}</p>
+                <p class="subtitle mb-0">{{ subtitle }}</p>
               </div>
               <slot></slot> 
             </div>

@@ -1,6 +1,7 @@
 <script setup>
   import authContent from '~/Components/authComponent/authContent.vue';
   import InputField from '~/Components/widgets/input/InputField.vue'; 
+  import orLogin from '~/Components/authComponent/OrLogin.vue'; 
 
   definePageMeta({
     layout: 'custom'
@@ -16,10 +17,9 @@
       <div class="mb-4"><InputField type="text" label="Prénom" v-model="firstName" placeholder="Prénom" /></div>
       <div class="mb-4"><InputField type="email" label="E-mail" v-model="email" placeholder="E-mail" /></div>
       <div class="mb-4"><InputField type="password" label="Mot de passe"  v-model="password"  placeholder="Mot de passe" /></div>
-      <button type="submit">S'inscrire</button>
-      <div class="text-center"><p>Avez-vous déjà un compte ? <NuxtLink to="/auth/login">Se connecter</NuxtLink></p></div> 
-
-     
+      <div class="mb-4"><button type="submit">S'inscrire</button></div>
+      <orLogin/>
+      <div class="text-center"><p class="mb-0">Avez-vous déjà un compte ? <NuxtLink to="/auth/login">Se connecter</NuxtLink></p></div> 
     </form>
   </authContent>
 </template>

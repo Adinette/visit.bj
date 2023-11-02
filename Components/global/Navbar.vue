@@ -13,8 +13,8 @@
           <li class="nav-item "><NuxtLink class="nav-link" to="#">Nos histoires</NuxtLink></li>
         </ul>
         <div class="join">
-          <NuxtLink class="btn btn-secondary" to="/authentication/login">Se connecter</NuxtLink>
-          <NuxtLink class="btn btn-primary" to="/authentication">S'inscrire</NuxtLink>
+          <NuxtLink class="btn btn-secondary" to="/auth/login">Se connecter</NuxtLink>
+          <NuxtLink class="btn btn-primary" to="/auth/signup">S'inscrire</NuxtLink>
         </div>
       </div>
     </nav>

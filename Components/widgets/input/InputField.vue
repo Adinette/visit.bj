@@ -6,7 +6,6 @@ const props = defineProps({
   type: String,
   value: String,
   placeholder: String,
-  error: null
 });
 
 const valueRef = ref(props.value);

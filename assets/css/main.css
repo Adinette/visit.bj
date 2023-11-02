@@ -30,9 +30,10 @@ ul {
 img {
   max-width: 100%;
 }
-a {
+a, a:hover{
   display: inline-block;
   text-decoration: none;
+  color: var(--color-primary);
 }
 
 .btn-primary {
@@ -44,7 +45,7 @@ a {
   color: #FFFFFF;
 }
 .btn-secondary {
-  background-color: #FFFFFF;
+  background-color: var(--color-white);
   font-weight: 600;
   padding: 0.5rem 1rem ;
   border: 1px solid var(--color-primary);
@@ -59,11 +60,13 @@ a {
   color: var(--color-white);
 }
 
+.form-control {
+  padding: 1.125rem 1.5rem ;
+}
 .form-control:focus, .form-select:focus {
   border-color: var(--color-primary);
   box-shadow: 0 0 0 0.2rem rgba(255, 165, 0, 0.25);
 }
-
 .floatingInput {
   height: 3.5rem;
 }
@@ -77,15 +80,16 @@ a {
   color: var(--color-primary);
 }
 .floatingLabel {
+  display: none;
   pointer-events: none;
   position: absolute;
   top: 1rem;
   left: 1rem;
-  background: #FFFFFF;
+  background: var(--color-white);
   padding: 0 0.5rem;
-  color: #8C8B92;
-  transition: all ease-in-out 0.2s;
-  display: none;
+}
+input::placeholder {
+  color: var(--color-text);
 }
 input:focus::placeholder {
   color: transparent;
@@ -109,20 +113,23 @@ header {
 }
 
 
-.authentication {
+.auth {
   display: flex;
   align-items: center;
-  background-image: url(/assets/images/authentication.png);
+  background-image: url(/assets/images/auth.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  /* height: 100vh; */
+  height: 100vh;
   padding: 2rem 0;
 }
-.authentication .blogAuthentication {
+.auth .blogAuth {
   background-color: var(--color-white);
-  border: 1px solid #E4E4E4;
+  padding: 2rem;
   border-radius: 24px;
+}
+.auth .blogAuth a {
+  text-decoration: underline;
 }
 
 footer {

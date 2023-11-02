@@ -1,0 +1,28 @@
+<script setup>
+  import authContent from '~/Components/authComponent/authContent.vue';
+  import InputField from '~/Components/widgets/input/InputField.vue'; 
+
+  definePageMeta({
+    layout: 'custom'
+  });
+
+</script>
+
+<template>
+  <authContent title="S'inscrire">
+    <form>
+      <p v-if="feedback">{{ feedback }}</p>
+      <div class="mb-4"><InputField type="text" label="Nom" v-model="lastName" placeholder="Nom" /></div>
+      <div class="mb-4"><InputField type="text" label="Prénom" v-model="firstName" placeholder="Prénom" /></div>
+      <div class="mb-4"><InputField type="email" label="E-mail" v-model="email" placeholder="E-mail" /></div>
+      <div class="mb-4"><InputField type="password" label="Mot de passe"  v-model="password"  placeholder="Mot de passe" /></div>
+      <button type="submit">S'inscrire</button>
+      <div class="text-center"><p>Avez-vous déjà un compte ? <NuxtLink to="/auth/login">Se connecter</NuxtLink></p></div> 
+
+     
+    </form>
+  </authContent>
+</template>
+
+
+<style scoped></style>

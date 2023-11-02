@@ -1,6 +1,6 @@
 <script setup>
   import Navbar from '../Components/global/Navbar.vue';
-  import Foot from '../Components/global/BaseFooter.vue';
+  import baseFooter from '~/Components/global/BaseFooter.vue';
 </script>
 
 <template>
@@ -9,8 +9,8 @@
   </header>
   <slot></slot> 
   <footer>
-    <Foot/>
+    <baseFooter/>
   </footer>
 </template>
 
- 
+<style scoped></style>

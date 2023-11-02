@@ -1,12 +1,10 @@
-<script setup>
- 
-</script>
+<script setup></script>
 
 <template>
-  <div class="authentication">
+  <div class="auth">
     <slot></slot> 
   </div>
  
 </template>
 
- 
+<style scoped></style>

@@ -2,7 +2,7 @@
   
   import authContent from '~/Components/authComponent/authContent.vue';
   import InputField from '~/Components/widgets/input/InputField.vue'; 
-  import UButton from '~/Components/widgets/button/UButton.vue';
+  import Ubutton from '~/Components/widgets/button/Ubutton.vue'; 
 
   definePageMeta({
     layout: 'custom'
@@ -26,7 +26,7 @@
       <p v-if="feedback">{{ feedback }}</p>
       <div class="mb-3"><InputField type="password" label="Mot de passe"  v-model="reset.password"  placeholder="Mot de passe" /></div>
       <div class="mb-3"><InputField type="password" label="Confirmer mot de passe"  v-model="reset.passwordConfirm"  placeholder="Confirmer mot de passe" /></div>
-      <UButton />
+      <Ubutton />
      </form>   
   </authContent>
   

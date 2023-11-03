@@ -7,6 +7,7 @@
   useHead({
     title: "Découvrir le Bénin",
   });
+  
 </script>
 
 <template>

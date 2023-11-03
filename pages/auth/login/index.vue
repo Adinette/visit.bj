@@ -2,8 +2,9 @@
   
   import authContent from '~/Components/authComponent/authContent.vue';
   import InputField from '~/Components/widgets/input/InputField.vue'; 
-  import Ubutton from '~/Components/widgets/button/UButton.vue';
+  import Ubutton from '~/Components/widgets/button/Ubutton.vue';
   import socialConnect from '~/Components/authComponent/socialConnect.vue';
+  
   definePageMeta({
     layout: 'custom'
   });

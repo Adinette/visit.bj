@@ -2,7 +2,7 @@
   
   import authContent from '~/Components/authComponent/authContent.vue';
   import InputField from '~/Components/widgets/input/InputField.vue'; 
-  import UButton from '~/Components/widgets/button/UButton.vue';
+  import Ubutton from '~/Components/widgets/button/Ubutton.vue';
 
   definePageMeta({
     layout: 'custom'
@@ -18,7 +18,7 @@
     <form>
       <p v-if="feedback">{{ feedback }}</p>
       <div class="mb-3"><InputField type="email" label="E-mail" v-model="email" placeholder="E-mail" /></div>
-      <div class="mb-3"><UButton /></div>
+      <div class="mb-3"><Ubutton /></div>
       <div class="text-center"><p class="mb-0">Avez-vous déjà un compte ?  <NuxtLink to="/auth/login">Se connecter</NuxtLink></p></div> 
     </form>  
   </authContent>

@@ -19,19 +19,19 @@
       <div class="container">
         <div class="row">
           <div class="col-sm-12 col-lg-8 mx-auto">
-            <ul class="d-flex flex-column flex-md-row justify-content-center">
-              <li class="mb-3 mb-md-0">
+            <ul class="d-flex flex-column flex-sm-row justify-content-center">
+              <li class="mb-3 mb-sm-0">
                 <NuxtLink href="#">Accueil</NuxtLink>
               </li>
               <li><NuxtLink to="/">Découvrir le Bénin</NuxtLink></li>
-              <li class="my-3 my-md-0">
+              <li class="my-3 my-sm-0">
                 <NuxtLink to="#">Nos histoires</NuxtLink>
               </li>
               <li><NuxtLink to="#">Contact</NuxtLink></li>
             </ul>
-            <ul class="d-flex flex-column flex-md-row justify-content-center mb-0">
+            <ul class="d-flex flex-column flex-sm-row justify-content-center mb-0">
               <li><NuxtLink to="#">Conditions d'utilisation</NuxtLink></li>
-              <li class="my-3 my-md-0"><NuxtLink to="#">FAQ</NuxtLink></li>
+              <li class="my-3 my-sm-0"><NuxtLink to="#">FAQ</NuxtLink></li>
               <li><NuxtLink to="#">Confidentialité</NuxtLink></li>
             </ul>
           </div>

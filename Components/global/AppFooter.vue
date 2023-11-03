@@ -5,7 +5,7 @@
     <div class="socialNetwork">
       <div class="container">
         <div class="mb-3">
-          <NuxtLink to="#"><NuxtImg src="~/assets/images/logo.png" alt="logo"/></NuxtLink>
+          <NuxtLink to="#"><img src="~/assets/images/logo.png" alt="logo"/></NuxtLink>
         </div>
         <div class="contentIcon">
           <NuxtLink to="#"><i class="bi bi-facebook"></i></NuxtLink>
@@ -29,9 +29,7 @@
               </li>
               <li><NuxtLink to="#">Contact</NuxtLink></li>
             </ul>
-            <ul
-              class="d-flex flex-column flex-md-row justify-content-center mb-0"
-            >
+            <ul class="d-flex flex-column flex-md-row justify-content-center mb-0">
               <li><NuxtLink to="#">Conditions d'utilisation</NuxtLink></li>
               <li class="my-3 my-md-0"><NuxtLink to="#">FAQ</NuxtLink></li>
               <li><NuxtLink to="#">Confidentialité</NuxtLink></li>

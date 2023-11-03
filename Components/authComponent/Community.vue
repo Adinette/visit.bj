@@ -8,8 +8,8 @@
       <hr class="line">
     </div>
     <div>
-      <button class="mr-2"><NuxtImg src="~/assets/images/facebook.png" alt="facebok"/></button>
-      <button><NuxtImg src="~/assets/images/google.png" alt="google"/></button>
+      <button class="mr-2"><img src="~/assets/images/facebook.png" alt="facebok"/></button>
+      <button><img src="~/assets/images/google.png" alt="google"/></button>
     </div>
   </div> 
 </template>
@@ -23,5 +23,6 @@
     background-color: var(--color-white);
     border: 0;
   }
+
 
 </style>

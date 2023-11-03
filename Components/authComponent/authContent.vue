@@ -17,11 +17,11 @@
       <div class="row">
         <div class="col-lg-6 mx-auto">
           <div class="blogAuth">
-            <div class="text-center mb-4"><NuxtImg src="~/assets/images/logo.png" alt="logo" /></div>
+            <div class="text-center mb-4"><img src="~/assets/images/logo.png" alt="logo" /></div>
             <div>
               <div class="mb-6">
-                <h1 class="mb-3">{{ title }}</h1>
-                <p class="subtitle mb-0">{{ subtitle }}</p>
+                <h1 class="mb-3">{{ props.title }}</h1>
+                <p class="subtitle mb-0">{{ props.subtitle }}</p>
               </div>
               <slot></slot> 
             </div>

@@ -3,8 +3,7 @@
   import authContent from '~/Components/authComponent/authContent.vue';
   import InputField from '~/Components/widgets/input/InputField.vue'; 
   import Ubutton from '~/Components/widgets/button/UButton.vue';
-  import Community from '~/Components/authComponent/Community.vue';
-
+  import socialConnect from '~/Components/authComponent/socialConnect.vue';
   definePageMeta({
     layout: 'custom'
   });
@@ -31,8 +30,7 @@
       <div class="mb-3"><InputField type="password" label="Mot de passe"  v-model="login.password"  placeholder="Mot de passe" /></div>
       <div class="text-end mb-3"><NuxtLink to="/auth/resetPassword">Mot de pase oublié?</NuxtLink></div>
       <div class="mb-3"><Ubutton title="Se connecter"/></div>
-      
-      <Community/>
+      <socialConnect/>
       <div class="text-center"><p class="mb-0">Vous n'avez pas de compte ? <NuxtLink to="/auth/signup">S'inscrire</NuxtLink></p></div> 
     </form>
   </authContent>

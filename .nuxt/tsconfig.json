@@ -54,13 +54,16 @@
         "../public/*"
       ],
       "#app": [
-        "../node_modules/.pnpm/nuxt@3.8.0_vite@4.5.0/node_modules/nuxt/dist/app"
+        "../node_modules/.pnpm/nuxt@3.8.0_rollup@2.79.1_vite@4.5.0/node_modules/nuxt/dist/app"
       ],
       "#app/*": [
-        "../node_modules/.pnpm/nuxt@3.8.0_vite@4.5.0/node_modules/nuxt/dist/app/*"
+        "../node_modules/.pnpm/nuxt@3.8.0_rollup@2.79.1_vite@4.5.0/node_modules/nuxt/dist/app/*"
       ],
       "vue-demi": [
-        "../node_modules/.pnpm/nuxt@3.8.0_vite@4.5.0/node_modules/nuxt/dist/app/compat/vue-demi"
+        "../node_modules/.pnpm/nuxt@3.8.0_rollup@2.79.1_vite@4.5.0/node_modules/nuxt/dist/app/compat/vue-demi"
+      ],
+      "pinia": [
+        "../node_modules/.pnpm/pinia@2.1.7_vue@3.3.7/node_modules/pinia/dist/pinia"
       ],
       "#vue-router": [
         "./vue-router-stub"
@@ -82,16 +85,21 @@
   "include": [
     "./nuxt.d.ts",
     "../**/*",
-    "../node_modules/.pnpm/@nuxt+devtools@1.0.0_nuxt@3.8.0_vite@4.5.0/node_modules/@nuxt/devtools/runtime",
-    "../node_modules/.pnpm/@nuxt+telemetry@2.5.2/node_modules/@nuxt/telemetry/runtime",
+    "../node_modules/.pnpm/@vite-pwa+nuxt@0.1.1_@nuxt+kit@3.8.0_vite-plugin-pwa@0.16.6/node_modules/@vite-pwa/nuxt/runtime",
+    "../node_modules/.pnpm/@pinia-plugin-persistedstate+nuxt@1.2.0_@pinia+nuxt@0.5.1_pinia@2.1.7_rollup@2.79.1/node_modules/@pinia-plugin-persistedstate/nuxt/runtime",
+    "../node_modules/.pnpm/@pinia+nuxt@0.5.1_rollup@2.79.1_vue@3.3.7/node_modules/@pinia/nuxt/runtime",
+    "../node_modules/.pnpm/@nuxt+devtools@1.0.0_nuxt@3.8.0_rollup@2.79.1_vite@4.5.0/node_modules/@nuxt/devtools/runtime",
+    "../node_modules/.pnpm/@nuxt+telemetry@2.5.2_rollup@2.79.1/node_modules/@nuxt/telemetry/runtime",
     ".."
   ],
   "exclude": [
     "../node_modules",
-    "../../node_modules",
-    "../node_modules/.pnpm/nuxt@3.8.0_vite@4.5.0/node_modules/nuxt/node_modules",
-    "../node_modules/.pnpm/@nuxt+devtools@1.0.0_nuxt@3.8.0_vite@4.5.0/node_modules/@nuxt/devtools/runtime/server",
-    "../node_modules/.pnpm/@nuxt+telemetry@2.5.2/node_modules/@nuxt/telemetry/runtime/server",
+    "../node_modules/.pnpm/nuxt@3.8.0_rollup@2.79.1_vite@4.5.0/node_modules/nuxt/node_modules",
+    "../node_modules/.pnpm/@vite-pwa+nuxt@0.1.1_@nuxt+kit@3.8.0_vite-plugin-pwa@0.16.6/node_modules/@vite-pwa/nuxt/runtime/server",
+    "../node_modules/.pnpm/@pinia-plugin-persistedstate+nuxt@1.2.0_@pinia+nuxt@0.5.1_pinia@2.1.7_rollup@2.79.1/node_modules/@pinia-plugin-persistedstate/nuxt/runtime/server",
+    "../node_modules/.pnpm/@pinia+nuxt@0.5.1_rollup@2.79.1_vue@3.3.7/node_modules/@pinia/nuxt/runtime/server",
+    "../node_modules/.pnpm/@nuxt+devtools@1.0.0_nuxt@3.8.0_rollup@2.79.1_vite@4.5.0/node_modules/@nuxt/devtools/runtime/server",
+    "../node_modules/.pnpm/@nuxt+telemetry@2.5.2_rollup@2.79.1/node_modules/@nuxt/telemetry/runtime/server",
     "../dist",
     "../.output"
   ]

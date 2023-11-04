@@ -1,5 +1,5 @@
 {
-  "name": "nuxt-app",
+  "name": "Visite.bj",
   "private": true,
   "type": "module",
   "scripts": {
@@ -17,7 +17,6 @@
     "vue-router": "^4.2.5"
   },
   "dependencies": {
-    "@nuxtjs/axios": "^5.13.6",
     "@pinia-plugin-persistedstate/nuxt": "^1.2.0",
     "@pinia/nuxt": "^0.5.1",
     "@vee-validate/nuxt": "^4.11.8",

@@ -1,5 +1,10 @@
 <template>
-  <div>ok</div>
+  <DefaultLayout>
+
+  </DefaultLayout>
 </template>
 
-<script setup></script>
+<script setup>
+import DefaultLayout from "@/layout/default.vue";
+
+</script>

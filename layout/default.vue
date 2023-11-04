@@ -1,7 +1,7 @@
 <template>
   <Header />
 
-  <div class="vh-100">
+  <div>
     <slot />
   </div>
 

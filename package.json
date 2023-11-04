@@ -23,6 +23,7 @@
     "@pinia/nuxt": "^0.5.1",
     "@vee-validate/nuxt": "^4.11.8",
     "dayjs-nuxt": "^2.1.9",
+    "nuxt-swiper": "^1.2.2",
     "uuid": "^9.0.1"
   }
 }

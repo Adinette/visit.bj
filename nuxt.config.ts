@@ -1,15 +1,5 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  pages: true,
-  modules: [
-    "@vite-pwa/nuxt",
-    "@pinia-plugin-persistedstate/nuxt",
-    "@pinia/nuxt",
-    "@nuxt/image",
-    "nuxt-icon",
-  ],
-  devtools: { enabled: true },
-
   app: {
     head: {
       title: "Visit.bj",
@@ -28,6 +18,21 @@ export default defineNuxtConfig({
         },
       ],
     },
+  },
+  pages: true,
+  modules: [
+    "@vite-pwa/nuxt",
+    "@pinia-plugin-persistedstate/nuxt",
+    "@pinia/nuxt",
+    "@nuxt/image",
+    "nuxt-icon",
+    "nuxt-swiper",
+  ],
+
+  devtools: { enabled: true },
+
+  swiper: {
+    styleLang: "css",
   },
 
   image: {

@@ -12,6 +12,7 @@ import newsletter from "./newsletter.png";
 import pack_1 from "./pack_1.png";
 import pack_2 from "./pack_2.png";
 import hour from "./hour.svg";
+import star from "./star.svg";
 
 export {
   articlehistory,
@@ -28,4 +29,5 @@ export {
   pack_1,
   pack_2,
   hour,
+  star,
 };

@@ -29,7 +29,7 @@ export default defineNuxtConfig({
     "nuxt-swiper",
   ],
 
-  devtools: { enabled: true },
+  devtools: { enabled: false },
 
   swiper: {
     styleLang: "css",

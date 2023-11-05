@@ -28,7 +28,7 @@
             </li>
           </ul>
           <div>
-            <a class="btn btn-outline-primary mr-3" href="#">Se connecter</a>
+            <a class="btn btn-secondary mr-3" href="#">Se connecter</a>
             <a class="btn btn-primary" href="#">S'inscrire</a>
           </div>
         </div>

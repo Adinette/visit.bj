@@ -42,7 +42,9 @@
             <div class=" row justify-content-between align-items-center">
               <h3 class="col-auto">Compte</h3>
               <span class="bar w-100 col"></span>
-              <span class="col-auto text-center p-0"><i class="bi bi-check-circle-fill d-block mx-3"></i></span>
+              <span class="col-auto text-center p-0"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+  <path d="M10 20C4.477 20 0 15.523 0 10C0 4.477 4.477 0 10 0C15.523 0 20 4.477 20 10C20 15.523 15.523 20 10 20ZM9.003 14L16.073 6.929L14.659 5.515L9.003 11.172L6.174 8.343L4.76 9.757L9.003 14Z" fill="#FF8800"/>
+</svg></span>
               <span class="bar col"></span>
               <h3 class="col">Paiement</h3>
             </div>

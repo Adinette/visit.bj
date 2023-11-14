@@ -19,7 +19,7 @@ let contentElement: HTMLElement | undefined;
 
 onMounted(() => {
   if (contentPreload.value as HTMLElement) {
-    contentElement = contentPreload.value ;
+    contentElement = contentPreload.value;
   }
   if (headerReactive.value) {
     const elementHeader = headerReactive.value as HTMLElement;
@@ -27,27 +27,26 @@ onMounted(() => {
     if (elementHeader && elementHeader.children.length !== 0) {
       Object.entries(elementHeader.children).forEach((e) => {
         e[1].addEventListener("click", (item) => {
+          Object.entries(elementHeader.children).forEach((itemHeader) => {
+            itemHeader[1].classList.remove("active");
+          });
 
-          Object.entries(elementHeader.children).forEach((itemHeader) =>{
-            itemHeader[1].classList.remove('active')
-          })
-
-          e[1].classList.add('active')
-
-          const buttonRole = e[1].getAttribute('role')
-
+          e[1].classList.add("active");
+          
+          const buttonRole = e[1].getAttribute("role");
+          
           if (contentElement) {
             Object.entries(contentElement.children).forEach((el) => {
               const elementContentChildren = el[1] as HTMLElement;
-              
-              const contentRole = elementContentChildren.getAttribute('aria-tabs')
-              
-              if(contentRole === buttonRole){
-                elementContentChildren.classList.add('show','active')
-              }else{
-                elementContentChildren.classList.remove('show','active')
-              }
 
+              const contentRole =
+                elementContentChildren.getAttribute("aria-tabs");
+
+              if (contentRole === buttonRole) {
+                elementContentChildren.classList.add("show", "active");
+              } else {
+                elementContentChildren.classList.remove("show", "active");
+              }
             });
           }
         });

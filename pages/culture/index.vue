@@ -1,4 +1,4 @@
-<template>
+  <template>
     <DefaultLayout>
       <div class="container">
         <div class="row">
@@ -64,7 +64,7 @@
       <ClientOnly>
         <nav-tabs>
           <template v-slot:header>
-            <nav-header title="Apercu" :role="'view'" />
+            <nav-header title="Apercu" :role="'view'" ref="defaultTab" />
             <nav-header title="Programme" :role="'programs'" />
             <nav-header title="Hébergements" :role="'housing'" />
             <nav-header title="Avis" :role="'avis'" />
@@ -268,7 +268,7 @@
                   </div>
                 </div>
                 <!-- book-now -->
-                <div class="row align-items-center mt-10">
+                <div class="row align-items-center mt-10 mb-6">
                   <div class="col-auto reservation mr-3 mx-auto mx-xl-0">
                     <span
                       >Intéressé(e) par une visite détaillée de Porto Novo dans la
@@ -459,7 +459,7 @@
                   </div>
                 </div>
                 <!-- book-now -->
-                <div class="row align-items-center mt-10">
+                <div class="row align-items-center mt-10 mb-6">
                   <div class="col-auto reservation mr-3 mx-auto mx-xl-0">
                     <span
                       >Intéressé(e) par une visite détaillée de Porto Novo dans la
@@ -512,9 +512,9 @@
                         alt="hebergement"
                       />
                     </div>
-                    <h4>Chambre Double Deluxe</h4>
+                    <h4 class="mt-4">Chambre Double Deluxe</h4>
                     <span>Equipements de chambre</span>
-                    <div>
+                    <div class="mb-4 mt-2">
                       <nuxt-img
                         src="balcony.svg"
                         alt="balcony"
@@ -543,9 +543,9 @@
                         alt="hebergement"
                       />
                     </div>
-                    <h4>Chambre Double Deluxe</h4>
+                    <h4 class="mt-4">Chambre Double Deluxe</h4>
                     <span>Equipements de chambre</span>
-                    <div>
+                    <div class="mb-4 mt-2">
                       <nuxt-img
                         src="balcony.svg"
                         alt="balcony"
@@ -577,7 +577,7 @@
                   remboursement intégral.
                 </p>
                 <!-- book-now -->
-                <div class="row align-items-center mt-10">
+                <div class="row align-items-center mt-10 mb-6">
                   <div class="col-auto reservation mr-3 mx-auto mx-xl-0">
                     <span
                       >Intéressé(e) par une visite détaillée de Porto Novo dans la

@@ -667,7 +667,7 @@ input[type="color"]:focus,
 textarea:focus {
 	color: #51585f;
 	outline: none;
-	border-color: #343a40;
+	border-color: #fff;
 }
 
 select {

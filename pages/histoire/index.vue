@@ -1,17 +1,14 @@
 <template>
   <DefaultLayout>
-    <div class="">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-12 mb-3">
-            <h6 class="fw-semi-bold ml-3">Articles à la une</h6>
-          </div>
-          <div class="col-12 d-md-flex">
-            <!-- pack-1 -->
-            <div class="col-md-7 mb-5">
-             <CardInfos />
-            </div>
-            <!-- pack-2 -->
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 mb-3">
+          <h6 class="fw-semi-bold ml-3">Articles à la une</h6>
+        </div>
+        <div class="col-12 d-md-flex">
+          <div class="col-md-7 mb-5">
+            <CardInfos />
+
             <div class="col-md-5 mb-5">
               <CardInfos />
             </div>
@@ -27,16 +24,13 @@
             <h6 class="fw-semi-bold ml-3">Articles récents</h6>
           </div>
           <div class="col-12 d-md-flex">
-            <!-- pack-1 -->
             <div class="col-md-6 mb-5">
-              <CardArticle/>
+              <CardArticle />
             </div>
-          
           </div>
         </div>
       </div>
     </div>
-
     <div class="discover">
       <div class="container">
         <div class="row justify-content-center">

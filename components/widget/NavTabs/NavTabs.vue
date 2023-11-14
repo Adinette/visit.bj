@@ -21,10 +21,26 @@ onMounted(() => {
   if (contentPreload.value as HTMLElement) {
     contentElement = contentPreload.value;
   }
+
   if (headerReactive.value) {
     const elementHeader = headerReactive.value as HTMLElement;
 
     if (elementHeader && elementHeader.children.length !== 0) {
+      const apercuTab = elementHeader.querySelector('[role="view"]');
+      if (apercuTab) {
+        apercuTab.classList.add("active");
+
+        const buttonRole = apercuTab.getAttribute("role");
+        if (contentElement) {
+          const elementContentChildren = contentElement.querySelector(
+            `[aria-tabs="${buttonRole}"]`
+          );
+          if (elementContentChildren) {
+            elementContentChildren.classList.add("show", "active");
+          }
+        }
+      }
+
       Object.entries(elementHeader.children).forEach((e) => {
         e[1].addEventListener("click", (item) => {
           Object.entries(elementHeader.children).forEach((itemHeader) => {
@@ -32,9 +48,8 @@ onMounted(() => {
           });
 
           e[1].classList.add("active");
-          
+
           const buttonRole = e[1].getAttribute("role");
-          
           if (contentElement) {
             Object.entries(contentElement.children).forEach((el) => {
               const elementContentChildren = el[1] as HTMLElement;

@@ -89,6 +89,9 @@ input:focus::placeholder {
   color: transparent;
 } */
 
+
+
+
 /* Form */
 .form-control {
   padding: 0.5rem 1rem;
@@ -169,7 +172,7 @@ header {
 }
 
 .auth {
-  background-image: url(@/assets/images/auth.png);
+  background-image: url(@/assets/images/imagebackground.png); 
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;

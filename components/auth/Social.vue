@@ -5,9 +5,9 @@
       <p class="mb-0 mx-3">Ou se connecter avec</p>
       <hr class="line">
     </div>
-    <div>
-      <button class="mr-2"><img src="~/assets/images/facebook.png" alt="facebok"/></button>
-      <button><img src="~/assets/images/google.png" alt="google"/></button>
+    <div class="text-center">
+      <button class="mr-2"> <a class="navbar-brand"> <nuxt-img src="facebook.png" /> </a></button>
+      <button><a class="navbar-brand"> <nuxt-img src="google.png" /> </a></button>
     </div>
   </div> 
 </template>

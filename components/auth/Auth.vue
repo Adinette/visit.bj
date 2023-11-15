@@ -2,7 +2,7 @@
   <div class="auth">
     <div class="container">
     <div class="row">
-      <div class="col-md-8 col-lg-6 mx-auto">
+      <div class="col-md-8 col-lg-5 mx-auto mt-12">
         <div class="blogAuth">
           <div class="text-center mb-3"> <nuxt-img src="logo.png" alt="logo"/></div>
           <div>

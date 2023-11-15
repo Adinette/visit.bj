@@ -28,8 +28,8 @@
             </li>
           </ul>
           <div>
-            <a class="btn btn-outline-primary mr-3" href="#">Se connecter</a>
-            <a class="btn btn-primary" href="#">S'inscrire</a>
+            <NuxtLink to="/auth/login" class="btn btn-outline-primary mr-3">Se connecter</NuxtLink>
+            <NuxtLink to="/auth/signup" class="btn btn-primary">S'inscrire</NuxtLink>
           </div>
         </div>
       </nav>

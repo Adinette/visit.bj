@@ -52,6 +52,7 @@ onMounted(() => {
               [props.queryName ?? "nav"]: (e[1] as HTMLElement).innerText ?? "",
             },
           });
+          
           Object.entries(elementHeader.children).forEach((itemHeader) => {
             itemHeader[1].classList.remove("active");
           });

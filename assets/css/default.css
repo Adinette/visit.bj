@@ -695,15 +695,6 @@ input[type="submit"] {
 	transition: all 0.35s ease-in-out;
 }
 
-.button:hover,
-button:hover,
-input[type="button"]:hover,
-input[type="reset"]:hover,
-input[type="submit"]:hover {
-	background-color: #007bff;
-	color: #fff;
-}
-
 .button:hover::after,
 button:hover::after,
 input[type="button"]:hover::after,

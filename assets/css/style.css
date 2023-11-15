@@ -531,6 +531,20 @@ header {
   border-radius: 50%;
   color: #fff;
 }
+.accordion {
+  --bs-accordion-border-color: #fff;
+  --bs-accordion-btn-focus-box-shadow: none;
+}
+.accordion-button:not(.collapsed) {
+   color: var(--bs-accordion-active-color); 
+   background-color: #fff; 
+}
+.accordion-button::after {
+   margin-left: 1rem;
+}
+.accordion-button {
+   width: auto;
+}
 /* hebergements */
 .icon-width{
   width: 1.5rem;

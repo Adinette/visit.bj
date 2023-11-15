@@ -62,8 +62,8 @@
         </div>
       </div>
       <ClientOnly>
-        <nav-tabs>
-          <template v-slot:header>
+        <nav-tabs :queryName="'tab-culture'" >
+          <template v-slot:header >
             <nav-header title="Apercu" :role="'view'" />
             <nav-header title="Programme" :role="'programs'" />
             <nav-header title="Hébergements" :role="'housing'" />

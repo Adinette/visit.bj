@@ -14,6 +14,9 @@ const header = ref();
 const content = ref();
 const headerReactive = reactive(header);
 const contentPreload = reactive(content);
+const props = defineProps({ queryName: { type: String, require: true } });
+const router = useRouter();
+const route = useRoute();
 
 let contentElement: HTMLElement | undefined;
 
@@ -42,7 +45,13 @@ onMounted(() => {
       }
 
       Object.entries(elementHeader.children).forEach((e) => {
-        e[1].addEventListener("click", (item) => {
+        (e[1] as HTMLElement).addEventListener("click", (item) => {
+          router.push({
+            query: {
+              ...route.query,
+              [props.queryName ?? "nav"]: (e[1] as HTMLElement).innerText ?? "",
+            },
+          });
           Object.entries(elementHeader.children).forEach((itemHeader) => {
             itemHeader[1].classList.remove("active");
           });

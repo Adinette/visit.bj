@@ -1,5 +1,5 @@
 <template>
-      <li class="nav-item " :role="role" >
+      <li class="nav-item " :title="title" :role="role" >
         <a class="nav-link" id="ex1-tab-1">{{ title }}</a>
       </li>
 </template>

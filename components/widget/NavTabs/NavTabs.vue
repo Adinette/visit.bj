@@ -25,25 +25,12 @@ onMounted(() => {
     contentElement = contentPreload.value;
   }
 
+  updateTabs();
+
   if (headerReactive.value) {
     const elementHeader = headerReactive.value as HTMLElement;
 
     if (elementHeader && elementHeader.children.length !== 0) {
-      const apercuTab = elementHeader.querySelector('[role="view"]');
-      if (apercuTab) {
-        apercuTab.classList.add("active");
-
-        const buttonRole = apercuTab.getAttribute("role");
-        if (contentElement) {
-          const elementContentChildren = contentElement.querySelector(
-            `[aria-tabs="${buttonRole}"]`
-          );
-          if (elementContentChildren) {
-            elementContentChildren.classList.add("show", "active");
-          }
-        }
-      }
-
       Object.entries(elementHeader.children).forEach((e) => {
         (e[1] as HTMLElement).addEventListener("click", (item) => {
           router.push({
@@ -52,7 +39,7 @@ onMounted(() => {
               [props.queryName ?? "nav"]: (e[1] as HTMLElement).innerText ?? "",
             },
           });
-          
+
           Object.entries(elementHeader.children).forEach((itemHeader) => {
             itemHeader[1].classList.remove("active");
           });
@@ -79,4 +66,28 @@ onMounted(() => {
     }
   }
 });
+
+watch(
+  () => route.query["tab-culture"],
+  () => {
+    updateTabs();
+  }
+);
+
+const updateTabs = () => {
+  const elementHeader = headerReactive.value as HTMLElement;
+  const apercuTab = elementHeader.querySelector(`[title=${route.query['tab-culture']}]`) ?? elementHeader.querySelector('[role=view]');
+  if (apercuTab) {
+    apercuTab.classList.add("active");
+    const buttonRole = apercuTab.getAttribute("role");
+    if (contentElement) {
+      const elementContentChildren = contentElement.querySelector(
+        `[aria-tabs="${buttonRole}"]`
+      );
+      if (elementContentChildren) {
+        elementContentChildren.classList.add("show", "active");
+      }
+    }
+  }
+}
 </script>
